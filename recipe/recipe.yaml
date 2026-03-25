@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.1.0"
+  version: "1.1.1"
 
 package:
   name: pyvims
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pyvims/pyvims-${{ version }}.tar.gz
-  sha256: 90444bb8604d1579316c020bcfd65f0a1ab7d923f5ad8fc7e62f0d664369508e
+  sha256: 6679a7ed46f9eb90351c6d77906fa9cee057cc437ca13bf49a5b7bd55849a3d1
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - numpy >=1.17,<2
+    - numpy >=2
     - matplotlib-base >=3.1
     - pillow
     - scipy
